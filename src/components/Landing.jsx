@@ -1,31 +1,36 @@
 import React, { Component } from 'react'
-import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
+
 
 
 class Landing extends Component {
     render() {
         return (
-            <div> 
-                
+            <div>
+
                 <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="#home">Attendance</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Login</Nav.Link>
-                        {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                    <Navbar.Brand href="/home">Attendance</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="mr-auto">
+                            <Nav.Link href="/admin">Admin</Nav.Link>
+                            <Nav.Link href="/login">Login</Nav.Link>
+                            <Nav.Link href="./index2.html">New Employee</Nav.Link>
+
+                            {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                         </NavDropdown> */}
-                    </Nav>
-                    
-                </Navbar.Collapse>
-            </Navbar>
-            
+                        </Nav>
+
+                    </Navbar.Collapse>
+                </Navbar>
+
+
+
             </div>
         )
     }
